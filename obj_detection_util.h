@@ -1,5 +1,5 @@
-#ifndef NEON_SIGNAL_PROCESSING_H
-#define NEON_SIGNAL_PROCESSING_H
+#ifndef OBJ_DETECTION_UTIL_H
+#define OBJ_DETECTION_UTIL_H
 
 #include <arm_neon.h>
 #include <cstdint>
@@ -286,4 +286,4 @@ inline void threshold_detection(const float* sensor_data, uint8_t* detections,
 }
 
 
-#endif // NEON_SIGNAL_PROCESSING_H
+#endif // OBJ_DETECTION_UTIL_H
