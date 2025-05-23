@@ -1,6 +1,3 @@
-# ARM NEON Signal Processing Makefile
-# ====================================
-
 # Compiler settings
 CXX = g++
 CC = gcc
@@ -105,6 +102,10 @@ cortex-a76: $(TARGET)
 .PHONY: cortex-a78
 cortex-a78: ARCH_FLAGS = -march=armv8.2-a+simd -mtune=cortex-a78
 cortex-a78: $(TARGET)
+
+.PHONY: local-mac
+local-mac: ARCH_FLAGS = -march=armv8-a+simd -mcpu=native
+local-mac: $(TARGET)
 
 # Assembly output for optimization analysis
 .PHONY: assembly
