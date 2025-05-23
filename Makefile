@@ -102,6 +102,10 @@ cortex-a72: $(TARGET)
 cortex-a76: ARCH_FLAGS = -march=armv8.2-a+simd -mtune=cortex-a76
 cortex-a76: $(TARGET)
 
+.PHONY: cortex-a78
+cortex-a78: ARCH_FLAGS = -march=armv8.2-a+simd -mtune=cortex-a78
+cortex-a78: $(TARGET)
+
 # Assembly output for optimization analysis
 .PHONY: assembly
 assembly: $(BUILD_DIR)
